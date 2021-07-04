@@ -22,14 +22,14 @@ matrix(:,degree+1)=mod(matrix(:,degree-1)+matrix(:,degree),2);
 %matrix(:,degree+1)=mod(matrix(:,1)+matrix(:,degree)+(matrix(:,2)+1).*(matrix(:,3)+1).*(matrix(:,4)+1),2);
 %matrix(:,degree+1)=mod(matrix(:,1)+1,2);
 %matrix(:,degree+1)=mod(matrix(:,1)+sum(matrix,2),2);
-%matrix(:,degree+1)=mod(matrix(:,degree-1).*matrix(:,degree),2);%INTERESTING!!!
-%matrix(:,degree+1)=mod(1+matrix(:,degree-1).*matrix(:,degree),2);%INTERESTING!!!%%%MASTER
+%matrix(:,degree+1)=mod(matrix(:,degree-1).*matrix(:,degree),2);
+%matrix(:,degree+1)=mod(1+matrix(:,degree-1).*matrix(:,degree),2);
 %matrix(:,degree+1)=mod(matrix(:,1)+matrix(:,degree-1).*matrix(:,degree),2);
 %matrix(:,degree+1)=mod(matrix(:,1),2);
-%matrix(:,degree+1)=mod(matrix(:,1).*matrix(:,degree)+matrix(:,degree),2);%WANGXIAOFANG
-%matrix(:,degree+1)=mod(matrix(:,degree-1).*matrix(:,degree)+matrix(:,degree),2);%INTERESTING!!!%%%MASTER
+%matrix(:,degree+1)=mod(matrix(:,1).*matrix(:,degree)+matrix(:,degree),2);
 %matrix(:,degree+1)=mod(matrix(:,degree-1).*matrix(:,degree)+matrix(:,degree),2);
-%matrix(:,degree+1)=mod(prod(matrix,2),2);%INTERESTING!!!
+%matrix(:,degree+1)=mod(matrix(:,degree-1).*matrix(:,degree)+matrix(:,degree),2);
+%matrix(:,degree+1)=mod(prod(matrix,2),2);
 %matrix(:,degree+1)=mod(sum(matrix(:,1:2:end),2),2);%Sum odds
 %matrix(:,degree+1)=mod(sum(matrix(:,2:2:end),2),2);%Sum evens
 %matrix(:,degree+1)=mod(matrix(:,1).*matrix(:,2)+matrix(:,degree-1).*matrix(:,degree),2);
@@ -37,7 +37,6 @@ matrix(:,degree+1)=mod(matrix(:,degree-1)+matrix(:,degree),2);
 %matrix(:,degree+1)=mod(matrix(:,),2)
 %matrix(:,degree+1)=mod(matrix(:,1).*matrix(:,2)+matrix(:,3)+matrix(:,4),2);
 %matrix(:,degree+1)=mod(matrix(:1)+matrix(:,3),2);
-
 
 matrix(:,1)=[];
 Successor(1:2^degree,1)=(1:2^degree);
